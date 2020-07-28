@@ -29,14 +29,27 @@ window.onload = function data(){
                 'Na vida real, a única pilula que tira alguém da Matrix é o conhecimento',
                 'Às vezes na vida, nós nos sentimos acorrentados. Sem sequer sabermos que temos a chave',
                 'Buscando ser feliz, cada um cria em torno de si sua própria Matrix',
-                'Vivemos uma matrix trabalhista aonde dizem; trabalhem mais filhos do Brasil, e pensem menos, e eu me pergunto; quem faz isso? O sistema']
-                fraseSelecionada = citacoes[Math.floor(Math.random() * citacoes.length)]
+                'Vivemos uma matrix trabalhista aonde dizem; trabalhem mais filhos do Brasil, e pensem menos, e eu me pergunto; quem faz isso? O sistema',
+                'Um peixe no aquário feliz, não é diferente de ser humano na matrix',
+                'A vida é como no filme Matrix, quanto mais vai aprendendo mais vai se libertando do mundo de sonhos que lhe é passado',
+                'Vivemos numa matrix. Para se viver acordado neste sistema controlador é importante se permitir a evoluir',
+                'Matrix não pode me dizer quem sou',
+                'Abra sua mente em relação às questões espirituais. Saia da ilusão chamada Matrix. Desperte para a realidade, pois você é um ser multidimensional',
+                'Pessoas rasas nunca vão entender quem pensa além da Matrix',
+                'Saia da Matrix e mude o jeito como vê a vida',
+                'A Religião é a MATRIX do Sistema Opressor',
+                'Se não aprender a pensar e questionar suas crenças, nunca conseguirá enxergar o que está além do alcance dos olhos',
+                'Quem garante que essa realidade onde estamos vivendo, aqui e agora, não seja uma realidade virtual de um plano onde realmente estamos?',
+                'O sábio compreende a natureza do ignorante mais o ignorante não compreende a natureza do sábio',
+                'Mistérios são apenas parte de nós, as respostas carregamos dentro de nós',
+                'Não seria a vida, uma obsolescência programada?',
+                'Cada um é responsável pela sua própria ignorância!',
+                'O mundo é uma ilusão',
+                'Na prisão, as ilusões podem oferecer conforto',
+                'Se jogue ao próprio caos e encontre sua ordem']
+    
+    fraseSelecionada = citacoes[dataDia+1]
     document.getElementById('conteudo').innerHTML += '<div id="frase">'+ fraseSelecionada +'</div>'
-
-    setInterval(function(){        
-        fraseSelecionada = citacoes[Math.floor(Math.random() * citacoes.length)]
-        document.getElementById('frase').innerHTML = fraseSelecionada
-    }, 1000)
 }
 
 

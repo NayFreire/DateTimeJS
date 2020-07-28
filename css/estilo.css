@@ -10,10 +10,24 @@ html{
     color: white;
 }
 
-#conteudo{
+body{
     width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+#conteudo{
+    width: 500px;
     text-align: center;
     font-family: 'Rochester', cursive;
+    margin: 0;
+    margin-top: 50px;
 }
 
 #diaS{
@@ -21,6 +35,13 @@ html{
 }
 
 #relogio{
+    font-size: 40pt;
+    margin-top: 50px;
     font-family: 'Press Start 2P', cursive;
+}
+
+#frase{
+    margin-top: 50px;
+    font-size: 20pt;
 }
 

@@ -14,10 +14,7 @@ window.onload = function data(){
     document.getElementById('conteudo').innerHTML = '<h1 id="diaS"> ' + dia + '</h1>'
     document.getElementById('conteudo').innerHTML += '<h1 id="diaS"> Dia ' + dataDia + ' de ' + dataMes + ' de ' + dataAno + '</h1>'
     document.getElementById('conteudo').innerHTML += '<div id="relogio"></div>'
-}
 
-function frases(){
-    
     citacoes = ['Não acredito em destino. Porque não gosto da idéia de não poder controlar minha vida',
                 'Há uma grande diferença entre saber o caminho e percorrer o caminho',
                 'Não pense que é capaz. Saiba que é',
@@ -33,11 +30,15 @@ function frases(){
                 'Às vezes na vida, nós nos sentimos acorrentados. Sem sequer sabermos que temos a chave',
                 'Buscando ser feliz, cada um cria em torno de si sua própria Matrix',
                 'Vivemos uma matrix trabalhista aonde dizem; trabalhem mais filhos do Brasil, e pensem menos, e eu me pergunto; quem faz isso? O sistema']
-
-    fraseSelecionada = citacoes[Math.floor(Math.random() * citacoes.length)]
-
+                fraseSelecionada = citacoes[Math.floor(Math.random() * citacoes.length)]
     document.getElementById('conteudo').innerHTML += '<div id="frase">'+ fraseSelecionada +'</div>'
+
+    setInterval(function(){        
+        fraseSelecionada = citacoes[Math.floor(Math.random() * citacoes.length)]
+        document.getElementById('frase').innerHTML = fraseSelecionada
+    }, 1000)
 }
+
 
 
 

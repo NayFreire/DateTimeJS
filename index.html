@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Olá</title>
+</head>
+
+<body onload="frases()">
+    <div id="conteudo"></div>
+</body>
+<script>
+    function relogio(){
+        agora = new Date
+
+        hora = agora.getHours()
+        minutos = agora.getMinutes()
+        segundos = agora.getSeconds()
+
+        if(hora<10){
+        hora = '0' + hora
+        }
+        if(minutos<10){
+            minutos = '0' + minutos
+        }
+        if(segundos<10){
+            segundos = '0' + segundos
+        }
+
+        horario = hora + ":" + minutos + ":" + segundos
+        tempo = window.document.getElementById('relogio');
+        tempo.innerHTML = horario
+    }
+    setInterval(relogio, 500)
+</script>
+<script src="js/jscript.js"></script>
+</html>

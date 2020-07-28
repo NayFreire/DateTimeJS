@@ -1,0 +1,26 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-image: url('../imagens/matrix.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+#conteudo{
+    width: 100%;
+    text-align: center;
+    font-family: 'Rochester', cursive;
+}
+
+#diaS{
+    margin-top: 50px;
+}
+
+#relogio{
+    font-family: 'Press Start 2P', cursive;
+}
+

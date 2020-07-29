@@ -48,7 +48,8 @@ window.onload = function data(){
                 'Na prisão, as ilusões podem oferecer conforto',
                 'Se jogue ao próprio caos e encontre sua ordem']
     
-    fraseSelecionada = citacoes[dataDia+1]
+    fraseSelecionada = citacoes[dataDia]
+    console.log(dataDia+1)
     document.getElementById('conteudo').innerHTML += '<div id="frase">'+ fraseSelecionada +'</div>'
 }
 
